@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ipi-hV-nsS">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Car Map View Controller-->
+        <scene sceneID="vAG-P1-kkz">
+            <objects>
+                <viewController storyboardIdentifier="CarMap" id="YEs-DE-0vr" customClass="CarMapViewController" customModule="SixtCars" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BcF-SF-80D">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="mutedStandard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vEL-Pp-ZjA">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <connections>
+                                    <outlet property="delegate" destination="YEs-DE-0vr" id="UZh-Ub-F1T"/>
+                                </connections>
+                            </mapView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6kp-1L-vj9" customClass="Button" customModule="SixtCars" customModuleProvider="target">
+                                <rect key="frame" x="30" y="523" width="315" height="40"/>
+                                <color key="backgroundColor" name="Sixt_Orange"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="lLl-Ww-dqI"/>
+                                </constraints>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="2"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="GetCars"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <segue destination="DOq-E6-cD3" kind="show" identifier="CarList" id="84Q-dA-8XG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ccQ-At-lDO" firstAttribute="bottom" secondItem="6kp-1L-vj9" secondAttribute="bottom" constant="40" id="1CN-t7-lZd"/>
+                            <constraint firstAttribute="bottom" secondItem="vEL-Pp-ZjA" secondAttribute="bottom" id="43e-In-uZC"/>
+                            <constraint firstItem="6kp-1L-vj9" firstAttribute="leading" secondItem="ccQ-At-lDO" secondAttribute="leading" constant="30" id="8z1-et-qhs"/>
+                            <constraint firstItem="vEL-Pp-ZjA" firstAttribute="leading" secondItem="BcF-SF-80D" secondAttribute="leading" id="EHe-sV-k0z"/>
+                            <constraint firstItem="ccQ-At-lDO" firstAttribute="trailing" secondItem="6kp-1L-vj9" secondAttribute="trailing" constant="30" id="G0b-gi-MY2"/>
+                            <constraint firstAttribute="trailing" secondItem="vEL-Pp-ZjA" secondAttribute="trailing" id="PfJ-f6-g4b"/>
+                            <constraint firstItem="vEL-Pp-ZjA" firstAttribute="top" secondItem="BcF-SF-80D" secondAttribute="top" id="Tql-X7-Fb7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ccQ-At-lDO"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="RXy-FE-Ns1"/>
+                    <connections>
+                        <outlet property="mapView" destination="vEL-Pp-ZjA" id="bJ9-X4-Gt2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zuD-cW-FU0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="172" y="134"/>
+        </scene>
+        <!--CarList-->
+        <scene sceneID="Atd-rf-ruj">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="CarList" storyboardName="CarList" id="DOq-E6-cD3" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DY9-Bc-zAn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="854" y="133"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="fhR-iL-mct">
+            <objects>
+                <navigationController id="Ipi-hV-nsS" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="IjJ-em-VLG">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="barTintColor" name="Sixt_Black"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="YEs-DE-0vr" kind="relationship" relationship="rootViewController" id="EV8-yd-qte"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vmM-wb-4wv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-606" y="134"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Sixt_Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Sixt_Orange">
+            <color red="0.93333333333333335" green="0.41176470588235292" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

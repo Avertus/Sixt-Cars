@@ -1,0 +1,16 @@
+/* 
+  Localizable.strings
+  SixtCars
+
+  Created by Deniz Gultek on 11.09.2018.
+  Copyright © 2018 Sixt. All rights reserved.
+*/
+
+"GetCars" = "Show Car List";
+"CarList" = "Rental Car List";
+
+"LocationPermissionTitle" = "Ups, Need Permission";
+"LocationPermissionBody" = "In order to give you better service, please allow application to gather location data by giving location permissions through settings page.";
+
+"ErrorTitle" = "Something happened...";
+"Ok"="Ok";

@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		414D951721442A61006A2E86 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414D951621442A61006A2E86 /* Alamofire.framework */; };
+		414D954721445D34006A2E86 /* SixtCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414D954621445D34006A2E86 /* SixtCommon.framework */; };
+		414D955F214492F8006A2E86 /* SixtNetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D955E214492F8006A2E86 /* SixtNetworkConfiguration.swift */; };
+		414D956121449616006A2E86 /* BaseConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D956021449616006A2E86 /* BaseConnection.swift */; };
+		414D956621454B04006A2E86 /* HttpStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D956521454B04006A2E86 /* HttpStatusCode.swift */; };
+		414D956821454B86006A2E86 /* CarData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D956721454B86006A2E86 /* CarData.swift */; };
+		414D956F21455C84006A2E86 /* CodeTalkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D956E21455C84006A2E86 /* CodeTalkApi.swift */; };
+		414D957121456657006A2E86 /* CodeTalkURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D957021456657006A2E86 /* CodeTalkURLBuilder.swift */; };
+		414D957421456747006A2E86 /* UrlBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D957321456747006A2E86 /* UrlBuilder.swift */; };
+		414D957621456A57006A2E86 /* DataParsers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D957521456A57006A2E86 /* DataParsers.swift */; };
+		414D957A214571CC006A2E86 /* DriveNowApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D9579214571CC006A2E86 /* DriveNowApi.swift */; };
+		414D957C214572F8006A2E86 /* DriveNowURLBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D957B214572F8006A2E86 /* DriveNowURLBuilder.swift */; };
+		414D95802145C2D6006A2E86 /* SixtNetworkConfigurationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D957F2145C2D6006A2E86 /* SixtNetworkConfigurationTests.swift */; };
+		414D95822145C358006A2E86 /* MockSixtConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D95812145C358006A2E86 /* MockSixtConfiguration.swift */; };
+		414D95842145C490006A2E86 /* SessionManagerFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D95832145C490006A2E86 /* SessionManagerFactoryTests.swift */; };
+		414D95882145C7CF006A2E86 /* HttpStatusCodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D95872145C7CF006A2E86 /* HttpStatusCodeTests.swift */; };
+		414D958A2145C81C006A2E86 /* DataParsersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D95892145C81B006A2E86 /* DataParsersTests.swift */; };
+		414D958C2145D04B006A2E86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 414D958B2145D04B006A2E86 /* Assets.xcassets */; };
+		414D958E2145D2AD006A2E86 /* MockBaseConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D958D2145D2AD006A2E86 /* MockBaseConnection.swift */; };
+		414D95912145D547006A2E86 /* DriveNowApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D95902145D547006A2E86 /* DriveNowApiTests.swift */; };
+		414D95932145D92C006A2E86 /* CodeTalkApiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D95922145D92C006A2E86 /* CodeTalkApiTests.swift */; };
+		416293882144253400BE1C0D /* SessionManagerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 416293872144253400BE1C0D /* SessionManagerFactory.swift */; };
+		4172EAB921432E00000E83CE /* SixtNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4172EAAF21432E00000E83CE /* SixtNetwork.framework */; };
+		4172EAC021432E00000E83CE /* SixtNetwork.h in Headers */ = {isa = PBXBuildFile; fileRef = 4172EAB221432E00000E83CE /* SixtNetwork.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4172EABA21432E00000E83CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4172EAA621432DFF000E83CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4172EAAE21432E00000E83CE;
+			remoteInfo = SixtNetwork;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		414D951621442A61006A2E86 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
+		414D951A21442B2C006A2E86 /* SixtNetworkDevelopment.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SixtNetworkDevelopment.xcconfig; sourceTree = "<group>"; };
+		414D951B21442B81006A2E86 /* SixtNetworkRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SixtNetworkRelease.xcconfig; sourceTree = "<group>"; };
+		414D954621445D34006A2E86 /* SixtCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SixtCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		414D955E214492F8006A2E86 /* SixtNetworkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtNetworkConfiguration.swift; sourceTree = "<group>"; };
+		414D956021449616006A2E86 /* BaseConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseConnection.swift; sourceTree = "<group>"; };
+		414D956521454B04006A2E86 /* HttpStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpStatusCode.swift; sourceTree = "<group>"; };
+		414D956721454B86006A2E86 /* CarData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarData.swift; sourceTree = "<group>"; };
+		414D956E21455C84006A2E86 /* CodeTalkApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTalkApi.swift; sourceTree = "<group>"; };
+		414D957021456657006A2E86 /* CodeTalkURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTalkURLBuilder.swift; sourceTree = "<group>"; };
+		414D957321456747006A2E86 /* UrlBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UrlBuilder.swift; sourceTree = "<group>"; };
+		414D957521456A57006A2E86 /* DataParsers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParsers.swift; sourceTree = "<group>"; };
+		414D9579214571CC006A2E86 /* DriveNowApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveNowApi.swift; sourceTree = "<group>"; };
+		414D957B214572F8006A2E86 /* DriveNowURLBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveNowURLBuilder.swift; sourceTree = "<group>"; };
+		414D957F2145C2D6006A2E86 /* SixtNetworkConfigurationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtNetworkConfigurationTests.swift; sourceTree = "<group>"; };
+		414D95812145C358006A2E86 /* MockSixtConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockSixtConfiguration.swift; sourceTree = "<group>"; };
+		414D95832145C490006A2E86 /* SessionManagerFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManagerFactoryTests.swift; sourceTree = "<group>"; };
+		414D95872145C7CF006A2E86 /* HttpStatusCodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpStatusCodeTests.swift; sourceTree = "<group>"; };
+		414D95892145C81B006A2E86 /* DataParsersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParsersTests.swift; sourceTree = "<group>"; };
+		414D958B2145D04B006A2E86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		414D958D2145D2AD006A2E86 /* MockBaseConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockBaseConnection.swift; sourceTree = "<group>"; };
+		414D95902145D547006A2E86 /* DriveNowApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveNowApiTests.swift; sourceTree = "<group>"; };
+		414D95922145D92C006A2E86 /* CodeTalkApiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTalkApiTests.swift; sourceTree = "<group>"; };
+		416293872144253400BE1C0D /* SessionManagerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionManagerFactory.swift; sourceTree = "<group>"; };
+		4172EAAF21432E00000E83CE /* SixtNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SixtNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4172EAB221432E00000E83CE /* SixtNetwork.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SixtNetwork.h; sourceTree = "<group>"; };
+		4172EAB321432E00000E83CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4172EAB821432E00000E83CE /* SixtNetworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SixtNetworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4172EABF21432E00000E83CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4172EAAB21432E00000E83CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				414D954721445D34006A2E86 /* SixtCommon.framework in Frameworks */,
+				414D951721442A61006A2E86 /* Alamofire.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4172EAB521432E00000E83CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4172EAB921432E00000E83CE /* SixtNetwork.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		414D951921442B15006A2E86 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				414D951A21442B2C006A2E86 /* SixtNetworkDevelopment.xcconfig */,
+				414D951B21442B81006A2E86 /* SixtNetworkRelease.xcconfig */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		414D956921455BBA006A2E86 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				414D956C21455C3F006A2E86 /* Drive-Now */,
+				414D956B21455C38006A2E86 /* CodeTalk */,
+				414D957321456747006A2E86 /* UrlBuilder.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		414D956B21455C38006A2E86 /* CodeTalk */ = {
+			isa = PBXGroup;
+			children = (
+				414D956D21455C6F006A2E86 /* Response */,
+				414D956E21455C84006A2E86 /* CodeTalkApi.swift */,
+				414D957021456657006A2E86 /* CodeTalkURLBuilder.swift */,
+			);
+			path = CodeTalk;
+			sourceTree = "<group>";
+		};
+		414D956C21455C3F006A2E86 /* Drive-Now */ = {
+			isa = PBXGroup;
+			children = (
+				414D9579214571CC006A2E86 /* DriveNowApi.swift */,
+				414D957B214572F8006A2E86 /* DriveNowURLBuilder.swift */,
+			);
+			path = "Drive-Now";
+			sourceTree = "<group>";
+		};
+		414D956D21455C6F006A2E86 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				414D956721454B86006A2E86 /* CarData.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		414D957E2145C2A3006A2E86 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				414D958D2145D2AD006A2E86 /* MockBaseConnection.swift */,
+				414D95812145C358006A2E86 /* MockSixtConfiguration.swift */,
+				414D957F2145C2D6006A2E86 /* SixtNetworkConfigurationTests.swift */,
+				414D95832145C490006A2E86 /* SessionManagerFactoryTests.swift */,
+				414D95872145C7CF006A2E86 /* HttpStatusCodeTests.swift */,
+				414D95892145C81B006A2E86 /* DataParsersTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		414D958F2145D435006A2E86 /* Api */ = {
+			isa = PBXGroup;
+			children = (
+				414D95902145D547006A2E86 /* DriveNowApiTests.swift */,
+				414D95922145D92C006A2E86 /* CodeTalkApiTests.swift */,
+			);
+			path = Api;
+			sourceTree = "<group>";
+		};
+		41629386214421EA00BE1C0D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				414D955E214492F8006A2E86 /* SixtNetworkConfiguration.swift */,
+				416293872144253400BE1C0D /* SessionManagerFactory.swift */,
+				414D956021449616006A2E86 /* BaseConnection.swift */,
+				414D956521454B04006A2E86 /* HttpStatusCode.swift */,
+				414D957521456A57006A2E86 /* DataParsers.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		416295512144277600BE1C0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				414D954621445D34006A2E86 /* SixtCommon.framework */,
+				414D951621442A61006A2E86 /* Alamofire.framework */,
+			);
+			name = Frameworks;
+			path = ../Frameworks;
+			sourceTree = "<group>";
+		};
+		4172EAA521432DFF000E83CE = {
+			isa = PBXGroup;
+			children = (
+				4172EAB121432E00000E83CE /* SixtNetwork */,
+				4172EABC21432E00000E83CE /* SixtNetworkTests */,
+				416295512144277600BE1C0D /* Frameworks */,
+				4172EAB021432E00000E83CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4172EAB021432E00000E83CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4172EAAF21432E00000E83CE /* SixtNetwork.framework */,
+				4172EAB821432E00000E83CE /* SixtNetworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4172EAB121432E00000E83CE /* SixtNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				414D951921442B15006A2E86 /* Resources */,
+				41629386214421EA00BE1C0D /* Network */,
+				414D956921455BBA006A2E86 /* Api */,
+				4172EAB221432E00000E83CE /* SixtNetwork.h */,
+				4172EAB321432E00000E83CE /* Info.plist */,
+			);
+			path = SixtNetwork;
+			sourceTree = "<group>";
+		};
+		4172EABC21432E00000E83CE /* SixtNetworkTests */ = {
+			isa = PBXGroup;
+			children = (
+				414D958B2145D04B006A2E86 /* Assets.xcassets */,
+				414D957E2145C2A3006A2E86 /* Network */,
+				414D958F2145D435006A2E86 /* Api */,
+				4172EABF21432E00000E83CE /* Info.plist */,
+			);
+			path = SixtNetworkTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4172EAAC21432E00000E83CE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4172EAC021432E00000E83CE /* SixtNetwork.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4172EAAE21432E00000E83CE /* SixtNetwork */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4172EAC321432E00000E83CE /* Build configuration list for PBXNativeTarget "SixtNetwork" */;
+			buildPhases = (
+				4162937521433B2100BE1C0D /* SwiftLint */,
+				4172EAAA21432E00000E83CE /* Sources */,
+				4172EAAB21432E00000E83CE /* Frameworks */,
+				4172EAAC21432E00000E83CE /* Headers */,
+				4172EAAD21432E00000E83CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SixtNetwork;
+			productName = SixtNetwork;
+			productReference = 4172EAAF21432E00000E83CE /* SixtNetwork.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4172EAB721432E00000E83CE /* SixtNetworkTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4172EAC621432E00000E83CE /* Build configuration list for PBXNativeTarget "SixtNetworkTests" */;
+			buildPhases = (
+				4172EAB421432E00000E83CE /* Sources */,
+				4172EAB521432E00000E83CE /* Frameworks */,
+				414D957D2145C119006A2E86 /* Embed Carthage Frameworks */,
+				4172EAB621432E00000E83CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4172EABB21432E00000E83CE /* PBXTargetDependency */,
+			);
+			name = SixtNetworkTests;
+			productName = SixtNetworkTests;
+			productReference = 4172EAB821432E00000E83CE /* SixtNetworkTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4172EAA621432DFF000E83CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Sixt;
+				TargetAttributes = {
+					4172EAAE21432E00000E83CE = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+					};
+					4172EAB721432E00000E83CE = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = 4172EAA921432DFF000E83CE /* Build configuration list for PBXProject "SixtNetwork" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4172EAA521432DFF000E83CE;
+			productRefGroup = 4172EAB021432E00000E83CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4172EAAE21432E00000E83CE /* SixtNetwork */,
+				4172EAB721432E00000E83CE /* SixtNetworkTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4172EAAD21432E00000E83CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4172EAB621432E00000E83CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				414D958C2145D04B006A2E86 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		414D957D2145C119006A2E86 /* Embed Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(MODULES_iOS)/SixtCommon.framework",
+				"$(CARTHAGE_iOS)/Alamofire.framework",
+				"$(CARTHAGE_iOS)/CocoaLumberjack.framework",
+				"$(CARTHAGE_iOS)/CocoaLumberjackSwift.framework",
+			);
+			name = "Embed Carthage Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+		4162937521433B2100BE1C0D /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4172EAAA21432E00000E83CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				414D957421456747006A2E86 /* UrlBuilder.swift in Sources */,
+				416293882144253400BE1C0D /* SessionManagerFactory.swift in Sources */,
+				414D955F214492F8006A2E86 /* SixtNetworkConfiguration.swift in Sources */,
+				414D956121449616006A2E86 /* BaseConnection.swift in Sources */,
+				414D957A214571CC006A2E86 /* DriveNowApi.swift in Sources */,
+				414D957121456657006A2E86 /* CodeTalkURLBuilder.swift in Sources */,
+				414D957621456A57006A2E86 /* DataParsers.swift in Sources */,
+				414D956F21455C84006A2E86 /* CodeTalkApi.swift in Sources */,
+				414D956821454B86006A2E86 /* CarData.swift in Sources */,
+				414D957C214572F8006A2E86 /* DriveNowURLBuilder.swift in Sources */,
+				414D956621454B04006A2E86 /* HttpStatusCode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4172EAB421432E00000E83CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				414D95822145C358006A2E86 /* MockSixtConfiguration.swift in Sources */,
+				414D958E2145D2AD006A2E86 /* MockBaseConnection.swift in Sources */,
+				414D958A2145C81C006A2E86 /* DataParsersTests.swift in Sources */,
+				414D95882145C7CF006A2E86 /* HttpStatusCodeTests.swift in Sources */,
+				414D95842145C490006A2E86 /* SessionManagerFactoryTests.swift in Sources */,
+				414D95932145D92C006A2E86 /* CodeTalkApiTests.swift in Sources */,
+				414D95912145D547006A2E86 /* DriveNowApiTests.swift in Sources */,
+				414D95802145C2D6006A2E86 /* SixtNetworkConfigurationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4172EABB21432E00000E83CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4172EAAE21432E00000E83CE /* SixtNetwork */;
+			targetProxy = 4172EABA21432E00000E83CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4172EAC121432E00000E83CE /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 414D951A21442B2C006A2E86 /* SixtNetworkDevelopment.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Development;
+		};
+		4172EAC221432E00000E83CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 414D951B21442B81006A2E86 /* SixtNetworkRelease.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4172EAC421432E00000E83CE /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = SixtNetwork/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDEVELOPMENT";
+				PRODUCT_BUNDLE_IDENTIFIER = de.sixt.SixtNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Development;
+		};
+		4172EAC521432E00000E83CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = SixtNetwork/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-DRELEASE";
+				PRODUCT_BUNDLE_IDENTIFIER = de.sixt.SixtNetwork;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4172EAC721432E00000E83CE /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SixtNetworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.sixt.SixtNetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Development;
+		};
+		4172EAC821432E00000E83CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SixtNetworkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.sixt.SixtNetworkTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4172EAA921432DFF000E83CE /* Build configuration list for PBXProject "SixtNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4172EAC121432E00000E83CE /* Development */,
+				4172EAC221432E00000E83CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4172EAC321432E00000E83CE /* Build configuration list for PBXNativeTarget "SixtNetwork" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4172EAC421432E00000E83CE /* Development */,
+				4172EAC521432E00000E83CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4172EAC621432E00000E83CE /* Build configuration list for PBXNativeTarget "SixtNetworkTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4172EAC721432E00000E83CE /* Development */,
+				4172EAC821432E00000E83CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4172EAA621432DFF000E83CE /* Project object */;
+}

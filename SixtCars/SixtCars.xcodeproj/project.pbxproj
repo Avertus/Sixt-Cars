@@ -1,0 +1,836 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4122DC292146E8AF0005E349 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414D959A2145E111006A2E86 /* CoreLocation.framework */; };
+		4122DC2A2146E8B40005E349 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414D95982145E10B006A2E86 /* MapKit.framework */; };
+		4122DC302146EB180005E349 /* *.drive-now.com.cer in Resources */ = {isa = PBXBuildFile; fileRef = 4122DC2F2146EB180005E349 /* *.drive-now.com.cer */; };
+		4122DC342146EED40005E349 /* CarMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4122DC332146EED40005E349 /* CarMapViewController.swift */; };
+		4122DC362146EF530005E349 /* CarMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4122DC352146EF530005E349 /* CarMapViewModel.swift */; };
+		4122DC382146EF5C0005E349 /* CarMap.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4122DC372146EF5C0005E349 /* CarMap.storyboard */; };
+		4122DC3A2146F6F60005E349 /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4122DC392146F6F60005E349 /* Color.xcassets */; };
+		4122DC3C2146FCD90005E349 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4122DC3B2146FCD90005E349 /* UIColorExtension.swift */; };
+		4122DC3F214706F20005E349 /* BasicActivityIndicatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4122DC3E214706F20005E349 /* BasicActivityIndicatorViewController.swift */; };
+		4122DC41214707050005E349 /* BasicActivityIndicator.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4122DC40214707050005E349 /* BasicActivityIndicator.storyboard */; };
+		4122DC43214709730005E349 /* StoryboardFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4122DC42214709730005E349 /* StoryboardFactory.swift */; };
+		4122DC4521470ECC0005E349 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4122DC4421470ECC0005E349 /* CarModel.swift */; };
+		4122DC47214714030005E349 /* content.drive-now.com.cer in Resources */ = {isa = PBXBuildFile; fileRef = 4122DC46214714030005E349 /* content.drive-now.com.cer */; };
+		4122DC4E21471F030005E349 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4122DC4D21471F030005E349 /* UIImageViewExtension.swift */; };
+		4122DC5B21472F900005E349 /* BasicAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4122DC5921472F900005E349 /* BasicAlert.storyboard */; };
+		4122DC5C21472F900005E349 /* BasicAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4122DC5A21472F900005E349 /* BasicAlertViewController.swift */; };
+		4122DC5F214730320005E349 /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4122DC5E214730320005E349 /* Button.swift */; };
+		4122DC61214730390005E349 /* Label.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4122DC60214730390005E349 /* Label.swift */; };
+		4122DC63214730BB0005E349 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4122DC62214730BB0005E349 /* StringExtension.swift */; };
+		4122DC652147310C0005E349 /* FontExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4122DC642147310C0005E349 /* FontExtension.swift */; };
+		4122DC67214736E30005E349 /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4122DC66214736E30005E349 /* AlertManager.swift */; };
+		4122DC692147374E0005E349 /* UIApplicationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4122DC682147374E0005E349 /* UIApplicationExtension.swift */; };
+		414D951321442A29006A2E86 /* SixtNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414D951221442A29006A2E86 /* SixtNetwork.framework */; };
+		414D954521445D29006A2E86 /* SixtCommon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 414D954421445D29006A2E86 /* SixtCommon.framework */; };
+		414D957821456ECE006A2E86 /* SixtNetworkConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D957721456ECE006A2E86 /* SixtNetworkConfiguration.swift */; };
+		414D95952145DB50006A2E86 /* CodeTalkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D95942145DB50006A2E86 /* CodeTalkService.swift */; };
+		414D95972145DB5B006A2E86 /* DriveNowService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D95962145DB5B006A2E86 /* DriveNowService.swift */; };
+		414D959F2145E166006A2E86 /* PermissionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D959E2145E166006A2E86 /* PermissionManager.swift */; };
+		414D95A12145E339006A2E86 /* PermissionRequestorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D95A02145E339006A2E86 /* PermissionRequestorProtocol.swift */; };
+		414D95A42145E406006A2E86 /* CoreLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D95A32145E406006A2E86 /* CoreLocationManager.swift */; };
+		414D95A62145E712006A2E86 /* LocationPermissionRequestor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 414D95A52145E712006A2E86 /* LocationPermissionRequestor.swift */; };
+		4172EA8621432DE7000E83CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4172EA8521432DE7000E83CE /* AppDelegate.swift */; };
+		4172EA8821432DE7000E83CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4172EA8721432DE7000E83CE /* ViewController.swift */; };
+		4172EA8D21432DE9000E83CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4172EA8C21432DE9000E83CE /* Assets.xcassets */; };
+		4172EA9021432DE9000E83CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4172EA8E21432DE9000E83CE /* LaunchScreen.storyboard */; };
+		41A263A22148621600BF5C05 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 41A263A42148621600BF5C05 /* Localizable.strings */; };
+		41A263A82148631A00BF5C05 /* CarListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A263A72148631A00BF5C05 /* CarListViewController.swift */; };
+		41A263AA2148632400BF5C05 /* CarListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A263A92148632400BF5C05 /* CarListViewModel.swift */; };
+		41A263AC2148632D00BF5C05 /* CarList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41A263AB2148632D00BF5C05 /* CarList.storyboard */; };
+		41A263AF2148640B00BF5C05 /* CarListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A263AE2148640B00BF5C05 /* CarListTableViewCell.swift */; };
+		41A263B12148641A00BF5C05 /* CarListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 41A263B02148641A00BF5C05 /* CarListTableViewCell.xib */; };
+		41A263B32148801C00BF5C05 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A263B22148801C00BF5C05 /* UIViewExtension.swift */; };
+		41A263B6214890CE00BF5C05 /* CarListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A263B5214890CE00BF5C05 /* CarListViewModelTests.swift */; };
+		41A263B82148993700BF5C05 /* CarMapViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41A263B72148993700BF5C05 /* CarMapViewModelTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4172EA9721432DE9000E83CE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4172EA7A21432DE7000E83CE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4172EA8121432DE7000E83CE;
+			remoteInfo = SixtCars;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4122DC2F2146EB180005E349 /* *.drive-now.com.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "*.drive-now.com.cer"; sourceTree = "<group>"; };
+		4122DC332146EED40005E349 /* CarMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapViewController.swift; sourceTree = "<group>"; };
+		4122DC352146EF530005E349 /* CarMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapViewModel.swift; sourceTree = "<group>"; };
+		4122DC372146EF5C0005E349 /* CarMap.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarMap.storyboard; sourceTree = "<group>"; };
+		4122DC392146F6F60005E349 /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		4122DC3B2146FCD90005E349 /* UIColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		4122DC3E214706F20005E349 /* BasicActivityIndicatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicActivityIndicatorViewController.swift; sourceTree = "<group>"; };
+		4122DC40214707050005E349 /* BasicActivityIndicator.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BasicActivityIndicator.storyboard; sourceTree = "<group>"; };
+		4122DC42214709730005E349 /* StoryboardFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardFactory.swift; sourceTree = "<group>"; };
+		4122DC4421470ECC0005E349 /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
+		4122DC46214714030005E349 /* content.drive-now.com.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = "content.drive-now.com.cer"; sourceTree = "<group>"; };
+		4122DC4D21471F030005E349 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		4122DC5921472F900005E349 /* BasicAlert.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = BasicAlert.storyboard; sourceTree = "<group>"; };
+		4122DC5A21472F900005E349 /* BasicAlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasicAlertViewController.swift; sourceTree = "<group>"; };
+		4122DC5E214730320005E349 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		4122DC60214730390005E349 /* Label.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Label.swift; sourceTree = "<group>"; };
+		4122DC62214730BB0005E349 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		4122DC642147310C0005E349 /* FontExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontExtension.swift; sourceTree = "<group>"; };
+		4122DC66214736E30005E349 /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		4122DC682147374E0005E349 /* UIApplicationExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIApplicationExtension.swift; sourceTree = "<group>"; };
+		414D951221442A29006A2E86 /* SixtNetwork.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SixtNetwork.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		414D954421445D29006A2E86 /* SixtCommon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SixtCommon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		414D957721456ECE006A2E86 /* SixtNetworkConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixtNetworkConfiguration.swift; sourceTree = "<group>"; };
+		414D95942145DB50006A2E86 /* CodeTalkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeTalkService.swift; sourceTree = "<group>"; };
+		414D95962145DB5B006A2E86 /* DriveNowService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DriveNowService.swift; sourceTree = "<group>"; };
+		414D95982145E10B006A2E86 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		414D959A2145E111006A2E86 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		414D959E2145E166006A2E86 /* PermissionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionManager.swift; sourceTree = "<group>"; };
+		414D95A02145E339006A2E86 /* PermissionRequestorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionRequestorProtocol.swift; sourceTree = "<group>"; };
+		414D95A32145E406006A2E86 /* CoreLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationManager.swift; sourceTree = "<group>"; };
+		414D95A52145E712006A2E86 /* LocationPermissionRequestor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPermissionRequestor.swift; sourceTree = "<group>"; };
+		4162938221433EA500BE1C0D /* SixtCarsDevelopment.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SixtCarsDevelopment.xcconfig; sourceTree = "<group>"; };
+		4162938321433F3800BE1C0D /* SixtCarsRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = SixtCarsRelease.xcconfig; sourceTree = "<group>"; };
+		4172EA8221432DE7000E83CE /* SixtCars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SixtCars.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4172EA8521432DE7000E83CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4172EA8721432DE7000E83CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4172EA8C21432DE9000E83CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4172EA8F21432DE9000E83CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4172EA9121432DE9000E83CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4172EA9621432DE9000E83CE /* SixtCarsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SixtCarsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4172EA9C21432DE9000E83CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41A263A32148621600BF5C05 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		41A263A52148622D00BF5C05 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		41A263A72148631A00BF5C05 /* CarListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewController.swift; sourceTree = "<group>"; };
+		41A263A92148632400BF5C05 /* CarListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewModel.swift; sourceTree = "<group>"; };
+		41A263AB2148632D00BF5C05 /* CarList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CarList.storyboard; sourceTree = "<group>"; };
+		41A263AE2148640B00BF5C05 /* CarListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListTableViewCell.swift; sourceTree = "<group>"; };
+		41A263B02148641A00BF5C05 /* CarListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CarListTableViewCell.xib; sourceTree = "<group>"; };
+		41A263B22148801C00BF5C05 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		41A263B5214890CE00BF5C05 /* CarListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarListViewModelTests.swift; sourceTree = "<group>"; };
+		41A263B72148993700BF5C05 /* CarMapViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapViewModelTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4172EA7F21432DE7000E83CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4122DC2A2146E8B40005E349 /* MapKit.framework in Frameworks */,
+				4122DC292146E8AF0005E349 /* CoreLocation.framework in Frameworks */,
+				414D951321442A29006A2E86 /* SixtNetwork.framework in Frameworks */,
+				414D954521445D29006A2E86 /* SixtCommon.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4172EA9321432DE9000E83CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4122DC312146EB610005E349 /* Certificates */ = {
+			isa = PBXGroup;
+			children = (
+				4122DC46214714030005E349 /* content.drive-now.com.cer */,
+				4122DC2F2146EB180005E349 /* *.drive-now.com.cer */,
+			);
+			path = Certificates;
+			sourceTree = "<group>";
+		};
+		4122DC322146EEAB0005E349 /* CarMapViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4122DC332146EED40005E349 /* CarMapViewController.swift */,
+				4122DC352146EF530005E349 /* CarMapViewModel.swift */,
+				4122DC4421470ECC0005E349 /* CarModel.swift */,
+				4122DC372146EF5C0005E349 /* CarMap.storyboard */,
+			);
+			path = CarMapViewController;
+			sourceTree = "<group>";
+		};
+		4122DC3D214706D10005E349 /* BasicActivityIndicatorViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4122DC3E214706F20005E349 /* BasicActivityIndicatorViewController.swift */,
+				4122DC40214707050005E349 /* BasicActivityIndicator.storyboard */,
+			);
+			path = BasicActivityIndicatorViewController;
+			sourceTree = "<group>";
+		};
+		4122DC5821472F900005E349 /* BasicAlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				4122DC5921472F900005E349 /* BasicAlert.storyboard */,
+				4122DC5A21472F900005E349 /* BasicAlertViewController.swift */,
+			);
+			path = BasicAlertViewController;
+			sourceTree = "<group>";
+		};
+		4122DC5D214730230005E349 /* BaseViews */ = {
+			isa = PBXGroup;
+			children = (
+				4122DC5E214730320005E349 /* Button.swift */,
+				4122DC60214730390005E349 /* Label.swift */,
+			);
+			path = BaseViews;
+			sourceTree = "<group>";
+		};
+		414D959C2145E138006A2E86 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				414D95942145DB50006A2E86 /* CodeTalkService.swift */,
+				414D95962145DB5B006A2E86 /* DriveNowService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		414D959D2145E142006A2E86 /* Permission */ = {
+			isa = PBXGroup;
+			children = (
+				414D959E2145E166006A2E86 /* PermissionManager.swift */,
+				414D95A02145E339006A2E86 /* PermissionRequestorProtocol.swift */,
+				414D95A52145E712006A2E86 /* LocationPermissionRequestor.swift */,
+			);
+			path = Permission;
+			sourceTree = "<group>";
+		};
+		414D95A22145E3ED006A2E86 /* CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				414D95A32145E406006A2E86 /* CoreLocationManager.swift */,
+			);
+			path = CoreLocation;
+			sourceTree = "<group>";
+		};
+		4162937921433CBD00BE1C0D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4122DC312146EB610005E349 /* Certificates */,
+				4162937F21433E4C00BE1C0D /* Configurations */,
+				41A2639F214861C800BF5C05 /* Localizable */,
+				4172EA8C21432DE9000E83CE /* Assets.xcassets */,
+				4122DC392146F6F60005E349 /* Color.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		4162937A21433DD700BE1C0D /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				4172EA8521432DE7000E83CE /* AppDelegate.swift */,
+				4172EA8E21432DE9000E83CE /* LaunchScreen.storyboard */,
+				4172EA9121432DE9000E83CE /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		4162937B21433E0E00BE1C0D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4122DC5D214730230005E349 /* BaseViews */,
+				4122DC5821472F900005E349 /* BasicAlertViewController */,
+				4122DC3D214706D10005E349 /* BasicActivityIndicatorViewController */,
+				4122DC322146EEAB0005E349 /* CarMapViewController */,
+				41A263A6214862F200BF5C05 /* CarListViewController */,
+				4172EA8721432DE7000E83CE /* ViewController.swift */,
+				4122DC42214709730005E349 /* StoryboardFactory.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4162937C21433E2600BE1C0D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				4122DC66214736E30005E349 /* AlertManager.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		4162937D21433E2B00BE1C0D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4122DC3B2146FCD90005E349 /* UIColorExtension.swift */,
+				4122DC4D21471F030005E349 /* UIImageViewExtension.swift */,
+				4122DC62214730BB0005E349 /* StringExtension.swift */,
+				4122DC642147310C0005E349 /* FontExtension.swift */,
+				4122DC682147374E0005E349 /* UIApplicationExtension.swift */,
+				41A263B22148801C00BF5C05 /* UIViewExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		4162937E21433E3100BE1C0D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				414D95A22145E3ED006A2E86 /* CoreLocation */,
+				414D959D2145E142006A2E86 /* Permission */,
+				414D959C2145E138006A2E86 /* Network */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4162937F21433E4C00BE1C0D /* Configurations */ = {
+			isa = PBXGroup;
+			children = (
+				4162938221433EA500BE1C0D /* SixtCarsDevelopment.xcconfig */,
+				4162938321433F3800BE1C0D /* SixtCarsRelease.xcconfig */,
+				414D957721456ECE006A2E86 /* SixtNetworkConfiguration.swift */,
+			);
+			path = Configurations;
+			sourceTree = "<group>";
+		};
+		416295502144276B00BE1C0D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				414D959A2145E111006A2E86 /* CoreLocation.framework */,
+				414D95982145E10B006A2E86 /* MapKit.framework */,
+				414D951221442A29006A2E86 /* SixtNetwork.framework */,
+				414D954421445D29006A2E86 /* SixtCommon.framework */,
+			);
+			name = Frameworks;
+			path = ../Frameworks;
+			sourceTree = "<group>";
+		};
+		4172EA7921432DE7000E83CE = {
+			isa = PBXGroup;
+			children = (
+				4172EA8421432DE7000E83CE /* SixtCars */,
+				4172EA9921432DE9000E83CE /* SixtCarsTests */,
+				416295502144276B00BE1C0D /* Frameworks */,
+				4172EA8321432DE7000E83CE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4172EA8321432DE7000E83CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4172EA8221432DE7000E83CE /* SixtCars.app */,
+				4172EA9621432DE9000E83CE /* SixtCarsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4172EA8421432DE7000E83CE /* SixtCars */ = {
+			isa = PBXGroup;
+			children = (
+				4162937A21433DD700BE1C0D /* Application */,
+				4162937921433CBD00BE1C0D /* Resources */,
+				4162937B21433E0E00BE1C0D /* Views */,
+				4162937E21433E3100BE1C0D /* Services */,
+				4162937C21433E2600BE1C0D /* Helpers */,
+				4162937D21433E2B00BE1C0D /* Extensions */,
+			);
+			path = SixtCars;
+			sourceTree = "<group>";
+		};
+		4172EA9921432DE9000E83CE /* SixtCarsTests */ = {
+			isa = PBXGroup;
+			children = (
+				41A263B4214890B800BF5C05 /* Views */,
+				4172EA9C21432DE9000E83CE /* Info.plist */,
+			);
+			path = SixtCarsTests;
+			sourceTree = "<group>";
+		};
+		41A2639F214861C800BF5C05 /* Localizable */ = {
+			isa = PBXGroup;
+			children = (
+				41A263A42148621600BF5C05 /* Localizable.strings */,
+			);
+			path = Localizable;
+			sourceTree = "<group>";
+		};
+		41A263A6214862F200BF5C05 /* CarListViewController */ = {
+			isa = PBXGroup;
+			children = (
+				41A263AD214863FB00BF5C05 /* CarListTableViewCell */,
+				41A263A72148631A00BF5C05 /* CarListViewController.swift */,
+				41A263A92148632400BF5C05 /* CarListViewModel.swift */,
+				41A263AB2148632D00BF5C05 /* CarList.storyboard */,
+			);
+			path = CarListViewController;
+			sourceTree = "<group>";
+		};
+		41A263AD214863FB00BF5C05 /* CarListTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				41A263AE2148640B00BF5C05 /* CarListTableViewCell.swift */,
+				41A263B02148641A00BF5C05 /* CarListTableViewCell.xib */,
+			);
+			path = CarListTableViewCell;
+			sourceTree = "<group>";
+		};
+		41A263B4214890B800BF5C05 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				41A263B72148993700BF5C05 /* CarMapViewModelTests.swift */,
+				41A263B5214890CE00BF5C05 /* CarListViewModelTests.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4172EA8121432DE7000E83CE /* SixtCars */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4172EA9F21432DE9000E83CE /* Build configuration list for PBXNativeTarget "SixtCars" */;
+			buildPhases = (
+				4162937721433B9C00BE1C0D /* SwiftLint */,
+				4172EA7E21432DE7000E83CE /* Sources */,
+				4172EA7F21432DE7000E83CE /* Frameworks */,
+				4162937821433B9D00BE1C0D /* Embed Carthage Frameworks */,
+				4172EA8021432DE7000E83CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SixtCars;
+			productName = SixtCars;
+			productReference = 4172EA8221432DE7000E83CE /* SixtCars.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4172EA9521432DE9000E83CE /* SixtCarsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4172EAA221432DE9000E83CE /* Build configuration list for PBXNativeTarget "SixtCarsTests" */;
+			buildPhases = (
+				4172EA9221432DE9000E83CE /* Sources */,
+				4172EA9321432DE9000E83CE /* Frameworks */,
+				4172EA9421432DE9000E83CE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4172EA9821432DE9000E83CE /* PBXTargetDependency */,
+			);
+			name = SixtCarsTests;
+			productName = SixtCarsTests;
+			productReference = 4172EA9621432DE9000E83CE /* SixtCarsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4172EA7A21432DE7000E83CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Sixt;
+				TargetAttributes = {
+					4172EA8121432DE7000E83CE = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					4172EA9521432DE9000E83CE = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 4172EA8121432DE7000E83CE;
+					};
+				};
+			};
+			buildConfigurationList = 4172EA7D21432DE7000E83CE /* Build configuration list for PBXProject "SixtCars" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				de,
+			);
+			mainGroup = 4172EA7921432DE7000E83CE;
+			productRefGroup = 4172EA8321432DE7000E83CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4172EA8121432DE7000E83CE /* SixtCars */,
+				4172EA9521432DE9000E83CE /* SixtCarsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4172EA8021432DE7000E83CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4122DC47214714030005E349 /* content.drive-now.com.cer in Resources */,
+				4122DC41214707050005E349 /* BasicActivityIndicator.storyboard in Resources */,
+				4122DC382146EF5C0005E349 /* CarMap.storyboard in Resources */,
+				4172EA9021432DE9000E83CE /* LaunchScreen.storyboard in Resources */,
+				41A263B12148641A00BF5C05 /* CarListTableViewCell.xib in Resources */,
+				41A263A22148621600BF5C05 /* Localizable.strings in Resources */,
+				4122DC3A2146F6F60005E349 /* Color.xcassets in Resources */,
+				4172EA8D21432DE9000E83CE /* Assets.xcassets in Resources */,
+				41A263AC2148632D00BF5C05 /* CarList.storyboard in Resources */,
+				4122DC5B21472F900005E349 /* BasicAlert.storyboard in Resources */,
+				4122DC302146EB180005E349 /* *.drive-now.com.cer in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4172EA9421432DE9000E83CE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4162937721433B9C00BE1C0D /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+		4162937821433B9D00BE1C0D /* Embed Carthage Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(MODULES_iOS)/SixtNetwork.framework",
+				"$(MODULES_iOS)/SixtCommon.framework",
+				"$(CARTHAGE_iOS)/Alamofire.framework",
+				"$(CARTHAGE_iOS)/CocoaLumberjack.framework",
+				"$(CARTHAGE_iOS)/CocoaLumberjackSwift.framework",
+			);
+			name = "Embed Carthage Frameworks";
+			outputPaths = (
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SixtNetwork.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/SixCommon.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/Alamofire.framework",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/CocoaLumberjack",
+				"$(BUILT_PRODUCTS_DIR)/$(FRAMEWORKS_FOLDER_PATH)/CocoaLumberjackSwift",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4172EA7E21432DE7000E83CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41A263AA2148632400BF5C05 /* CarListViewModel.swift in Sources */,
+				414D95952145DB50006A2E86 /* CodeTalkService.swift in Sources */,
+				4122DC4E21471F030005E349 /* UIImageViewExtension.swift in Sources */,
+				4122DC692147374E0005E349 /* UIApplicationExtension.swift in Sources */,
+				414D95A42145E406006A2E86 /* CoreLocationManager.swift in Sources */,
+				4172EA8821432DE7000E83CE /* ViewController.swift in Sources */,
+				414D959F2145E166006A2E86 /* PermissionManager.swift in Sources */,
+				4122DC342146EED40005E349 /* CarMapViewController.swift in Sources */,
+				41A263A82148631A00BF5C05 /* CarListViewController.swift in Sources */,
+				4122DC3F214706F20005E349 /* BasicActivityIndicatorViewController.swift in Sources */,
+				4122DC5F214730320005E349 /* Button.swift in Sources */,
+				414D95972145DB5B006A2E86 /* DriveNowService.swift in Sources */,
+				41A263AF2148640B00BF5C05 /* CarListTableViewCell.swift in Sources */,
+				4122DC652147310C0005E349 /* FontExtension.swift in Sources */,
+				4122DC61214730390005E349 /* Label.swift in Sources */,
+				41A263B32148801C00BF5C05 /* UIViewExtension.swift in Sources */,
+				4122DC43214709730005E349 /* StoryboardFactory.swift in Sources */,
+				4122DC67214736E30005E349 /* AlertManager.swift in Sources */,
+				414D957821456ECE006A2E86 /* SixtNetworkConfiguration.swift in Sources */,
+				4122DC63214730BB0005E349 /* StringExtension.swift in Sources */,
+				414D95A12145E339006A2E86 /* PermissionRequestorProtocol.swift in Sources */,
+				4122DC362146EF530005E349 /* CarMapViewModel.swift in Sources */,
+				4122DC4521470ECC0005E349 /* CarModel.swift in Sources */,
+				4122DC5C21472F900005E349 /* BasicAlertViewController.swift in Sources */,
+				414D95A62145E712006A2E86 /* LocationPermissionRequestor.swift in Sources */,
+				4172EA8621432DE7000E83CE /* AppDelegate.swift in Sources */,
+				4122DC3C2146FCD90005E349 /* UIColorExtension.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4172EA9221432DE9000E83CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41A263B82148993700BF5C05 /* CarMapViewModelTests.swift in Sources */,
+				41A263B6214890CE00BF5C05 /* CarListViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4172EA9821432DE9000E83CE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4172EA8121432DE7000E83CE /* SixtCars */;
+			targetProxy = 4172EA9721432DE9000E83CE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4172EA8E21432DE9000E83CE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4172EA8F21432DE9000E83CE /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		41A263A42148621600BF5C05 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				41A263A32148621600BF5C05 /* en */,
+				41A263A52148622D00BF5C05 /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4172EA9D21432DE9000E83CE /* Development */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4162938221433EA500BE1C0D /* SixtCarsDevelopment.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Development;
+		};
+		4172EA9E21432DE9000E83CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4162938321433F3800BE1C0D /* SixtCarsRelease.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4172EAA021432DE9000E83CE /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = SixtCars/Application/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-DDEVELOPMENT";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Development;
+		};
+		4172EAA121432DE9000E83CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
+				INFOPLIST_FILE = SixtCars/Application/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-DRELEASE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_TREAT_WARNINGS_AS_ERRORS = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		4172EAA321432DE9000E83CE /* Development */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SixtCarsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.sixt.SixtCarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SixtCars.app/SixtCars";
+			};
+			name = Development;
+		};
+		4172EAA421432DE9000E83CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SixtCarsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = de.sixt.SixtCarsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SixtCars.app/SixtCars";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4172EA7D21432DE7000E83CE /* Build configuration list for PBXProject "SixtCars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4172EA9D21432DE9000E83CE /* Development */,
+				4172EA9E21432DE9000E83CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4172EA9F21432DE9000E83CE /* Build configuration list for PBXNativeTarget "SixtCars" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4172EAA021432DE9000E83CE /* Development */,
+				4172EAA121432DE9000E83CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4172EAA221432DE9000E83CE /* Build configuration list for PBXNativeTarget "SixtCarsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4172EAA321432DE9000E83CE /* Development */,
+				4172EAA421432DE9000E83CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4172EA7A21432DE7000E83CE /* Project object */;
+}

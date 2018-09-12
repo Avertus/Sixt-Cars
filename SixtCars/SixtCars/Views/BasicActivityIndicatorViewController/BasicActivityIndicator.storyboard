@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hzV-Yw-Zzo">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Basic Activity Indicator View Controller-->
+        <scene sceneID="zQN-Pm-Uet">
+            <objects>
+                <viewController storyboardIdentifier="BasicActivityIndicator" id="hzV-Yw-Zzo" customClass="BasicActivityIndicatorViewController" customModule="SixtCars" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" alpha="0.20000000000000001" contentMode="scaleToFill" id="K2i-fh-JYJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="IPT-lj-XCo">
+                                <rect key="frame" x="178" y="324" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="IPT-lj-XCo" secondAttribute="height" multiplier="1:1" id="DEB-Au-d2I"/>
+                                </constraints>
+                                <color key="color" name="Sixt_Orange"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" name="Sixt_Black"/>
+                        <constraints>
+                            <constraint firstItem="IPT-lj-XCo" firstAttribute="centerY" secondItem="K2i-fh-JYJ" secondAttribute="centerY" id="aAz-jo-tRS"/>
+                            <constraint firstItem="IPT-lj-XCo" firstAttribute="centerX" secondItem="K2i-fh-JYJ" secondAttribute="centerX" id="nu2-3x-Bfh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3Vb-QC-hZp"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="IPT-lj-XCo" id="ZG0-1N-riB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UK7-hl-jLN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="439" y="-191"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Sixt_Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Sixt_Orange">
+            <color red="0.93333333333333335" green="0.41176470588235292" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,17 @@
+//
+//  SixtCommonRelease.xcconfig
+//  SixtCommon
+//
+//  Created by Deniz Gultek on 8.09.2018.
+//  Copyright © 2018 Sixt. All rights reserved.
+//
+
+// Global Paths
+WORKSPACEROOT=${SRCROOT}/..
+FRAMEWORKS=$(WORKSPACEROOT)/Frameworks
+CARTHAGE_iOS=$(FRAMEWORKS)/Carthage/Build/iOS
+MODULES_iOS=$(BUILD_DIR)/$(MODULE_CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+
+// FRAMEWORKS
+MODULE_CONFIGURATION=Release
+FRAMEWORK_SEARCH_PATHS=$(FRAMEWORKS) $(CARTHAGE_iOS) $(MODULES_iOS)

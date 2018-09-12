@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hnt-Bz-NkE">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Basic Alert View Controller-->
+        <scene sceneID="T13-OS-pIY">
+            <objects>
+                <viewController storyboardIdentifier="BasicAlert" id="hnt-Bz-NkE" customClass="BasicAlertViewController" customModule="SixtCars" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XIf-Fg-tiH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5I7-7w-R4g">
+                                <rect key="frame" x="48.5" y="167" width="278" height="333.5"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHA-Zp-OZQ" customClass="Button" customModule="SixtCars" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="253.5" width="158" height="40"/>
+                                        <color key="backgroundColor" name="Sixt_Black"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="4Ha-np-NWL"/>
+                                        </constraints>
+                                        <state key="normal">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="localizationKey" value="Ok"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="okButtonClicked:" destination="hnt-Bz-NkE" eventType="touchUpInside" id="T1N-UG-iyp"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HqE-aX-Cgh" customClass="Label" customModule="SixtCars" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="40" width="238" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKQ-Hj-Ngl" customClass="Label" customModule="SixtCars" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="60" width="238" height="0.0"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="isBold" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Sixt_Orange"/>
+                                <constraints>
+                                    <constraint firstItem="HqE-aX-Cgh" firstAttribute="leading" secondItem="5I7-7w-R4g" secondAttribute="leading" constant="20" id="063-6d-RHI"/>
+                                    <constraint firstItem="IKQ-Hj-Ngl" firstAttribute="leading" secondItem="5I7-7w-R4g" secondAttribute="leading" constant="20" id="1If-ba-vtu"/>
+                                    <constraint firstAttribute="width" secondItem="5I7-7w-R4g" secondAttribute="height" multiplier="10:12" id="4dn-c0-1m0"/>
+                                    <constraint firstAttribute="trailing" secondItem="zHA-Zp-OZQ" secondAttribute="trailing" constant="60" id="5TU-fn-MDF"/>
+                                    <constraint firstAttribute="trailing" secondItem="HqE-aX-Cgh" secondAttribute="trailing" constant="20" id="5hZ-Ci-Mnm"/>
+                                    <constraint firstAttribute="trailing" secondItem="IKQ-Hj-Ngl" secondAttribute="trailing" constant="20" id="IoM-j2-ah0"/>
+                                    <constraint firstItem="HqE-aX-Cgh" firstAttribute="top" secondItem="5I7-7w-R4g" secondAttribute="top" constant="40" id="ash-hW-2TD"/>
+                                    <constraint firstItem="IKQ-Hj-Ngl" firstAttribute="top" secondItem="HqE-aX-Cgh" secondAttribute="bottom" constant="20" id="d0A-19-8qZ"/>
+                                    <constraint firstItem="zHA-Zp-OZQ" firstAttribute="leading" secondItem="5I7-7w-R4g" secondAttribute="leading" constant="60" id="qI0-af-lgE"/>
+                                    <constraint firstAttribute="bottom" secondItem="zHA-Zp-OZQ" secondAttribute="bottom" constant="40" id="qxB-f8-8P8"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="5I7-7w-R4g" firstAttribute="centerY" secondItem="XIf-Fg-tiH" secondAttribute="centerY" id="Rxr-O3-YML"/>
+                            <constraint firstItem="5I7-7w-R4g" firstAttribute="height" secondItem="XIf-Fg-tiH" secondAttribute="height" multiplier="1:2" id="d4J-5X-yLU"/>
+                            <constraint firstItem="5I7-7w-R4g" firstAttribute="centerX" secondItem="XIf-Fg-tiH" secondAttribute="centerX" id="rWv-VT-Ygm"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="3n4-Ym-xCp"/>
+                    </view>
+                    <connections>
+                        <outlet property="containerView" destination="5I7-7w-R4g" id="Tdk-Qd-zk7"/>
+                        <outlet property="descriptionLabel" destination="IKQ-Hj-Ngl" id="quS-5j-sdt"/>
+                        <outlet property="okButton" destination="zHA-Zp-OZQ" id="daG-m5-cWN"/>
+                        <outlet property="titleLabel" destination="HqE-aX-Cgh" id="FYG-OL-knk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CWb-RE-jKd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85.599999999999994" y="-315.29235382308849"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Sixt_Black">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Sixt_Orange">
+            <color red="0.93333333333333335" green="0.41176470588235292" blue="0.17254901960784313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
